@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #0E0C0D;
+    color: #ffffff;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.error{
+    padding-top: 8px;
+    color: red;
+}
+.linear{
+    background: linear-gradient(180deg, #B40202 -96.99%, rgba(14, 12, 13, 0.46) 80.51%);
+}
+
+.zakaz{
+    text-align: center;
+    padding: 40px;
+}
+
+/* шапка сайта */
+header{
+    padding: 30px 15px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 60px;
+}
+.header-link{
+    color: #ffffff;
+    font-weight: 400;
+}
+.header-btns{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(180, 2, 2, 0.62);
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* шапка сайта */
+
+/* баннер */
+.banner{
+    padding: 0px 15px;
+}
+.banner-texts{
+    text-align: center;
+}
+.banner-content{
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.name-shop{
+    color: #FEFEFE;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.descr-shop{
+    margin-bottom: 20px;
+    color: #B40202;
+    font-size: 60px;
+    font-weight: 500;
+}
+.banner-btn{
+    margin-top: 70px;
+}
+/* баннер */
+
+/* каталог */
+.catalog{
+    padding: 80px 15px 90px 15px;
+}
+.title-wrapper{
+    display: flex;
+}
+.line1, .line2{
+    border-bottom: 2px solid #B40202;
+}
+.title{
+    font-size: 36px;
+    font-weight: 500;
+}
+.category-wrapper{
+    margin-top: 34px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 50px;
+}
+.category{
+    color: #fff;
+    font-size: 18px;
+}
+.catalog-item{
+    width: 420px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #B40202;
+    justify-content: space-between;
+}
+.descr-tovar{
+    padding-right: 40px;
+}
+
+.catalog-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+.tovars_in_cart{
+    font-size: 26px;
+}
+.name-tovar{
+    width: 180px;
+    margin-bottom: 40px;
+    color: #FFF;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.price-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* каталог */
+
+/* блок будь в курсе */
+.subscription{
+    padding: 90px 15px;
+    background: rgba(135, 4, 4, 0.38);
+}
+.title-center{
+    text-align: center;
+}
+.text-subs{
+    margin-top: 45px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+}
+.form-subs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: end;
+}
+.email-input{
+    width: 470px;
+    height: 50px;
+    background-color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+}
+.btn-subs{
+    width: 240px;
+    height: 50px;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    color: #870404;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* блок будь в курсе */
+
+/* блок "где нас найти?" */
+.contacts{
+    padding: 90px 15px;
+}
+.contacts-content{
+    display: flex;
+    gap: 117px;
+    padding-top: 80px;
+}
+.contacts-info p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.adress{
+    color: #870404;
+    font-weight: 600;
+}
+h2{
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.social-icons{
+    padding-top: 32px;
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+/* блок "где нас найти?" */
+
+/* подвал сайта */
+footer{
+    padding: 50px 15px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* подвал сайта */
+
+/* стр.регистрации */
+.registration__wrapper{
+    padding: 90px 15px 90px 15px;
+}
+.reg_content{
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.input{
+    max-width: 100%;
+    width: 420px;
+    border: 2px solid #870404;
+    background: none;
+    height: 45px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+.input-select{
+    color: #aaa9a9;
+}
+
+.akk{
+    text-align: center;
+    padding: 20px 0;
+}
+.form_registration a{
+    font-weight: 600;
+    color: #870404;
+}
+.btn_reg{
+    border: none;
+    background: #870404;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.title__forms{
+    font-size: 36px;
+    text-align: center;
+    color: #870404;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+textarea{
+    resize: none;
+    max-width: 100%;
+    width: 420px;
+    height: 120px;
+    background: none;
+    border: 2px solid #870404;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+.btn_add{
+    margin-top: 30px;
+}
+/* стр.регистрации */
+
+/* удалениe */
+.delete-block{
+    padding: 90px 15px;
+}
+h5{
+    margin-top: 100px;
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.delete_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+/* удалениe */
+
+/* профиль */
+.profile{
+    padding: 90px 15px;
+}
+.profile-content{
+    display: flex;
+    gap: 110px;
+    margin-top: 40px;
+}
+.nav-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px;
+    background-color: #870404;
+    width: 300px;
+}
+.profile-link{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.user-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+h6{
+    font-size: 26px;
+    color: #870404;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.user-full-info p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.delete_edit{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.title_app{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.btns_plus-minus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #870404;
+    border-top: none;
+    padding: 10px;
+}
+.empty_korz{
+    font-size: 20px;
+}
+.plus{
+    color: #FFF;
+    font-size: 30px;
+}
+.wrapppp{
+    display: flex;
+    justify-content: space-between;
+}
+.app-item{
+    border: 0.5px solid #870404;
+}
+.info-app{
+    padding: 15px;
+}
+.name_appp{
+    color: #870404;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttons-count{
+    display: flex;
+    justify-content: space-between;
+}
+.btns-yes-no{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-price_app{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 15px;
+}
+.email_app{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.cart-btn-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.btn-arrow{
+    color: #870404;
+    font-weight: 500;
+}
+.status{
+    padding-bottom: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.status-app{
+    color: #FFF;
+}
+.avtorg{
+    font-size: 22px;
+    font-weight: 600;
+    color: #e20606;
+}
+/* профиль */
+
+
+
+.slider{
+    width: 420px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.slide img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+.slide.active{
+    overflow: visible;
+    visibility: visible;
+}
+
+.dots{
+    display: flex;
+    gap: 20px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgb(128, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.dot:hover{
+    background: rgb(128, 0, 0);
+}
+.dot.active{
+    background: rgb(255, 1, 1);
+}
+.about_content{
+    display: flex;
+    gap: 50px;
+}
+.about_content p{
+    max-width: 800px;
+}
+
+
+/* стр товара */
+.master-class{
+    padding: 80px 15px 80px 15px;
+}
+.card{
+    display: flex;
+    gap: 60px;
+    margin-top: 24px;
+}
+.category_view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category{
+    font-size: 20px;
+    color: #848383;
+}
+.view{
+    color: #848383;
+}
+.name_card{
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.what_is{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.description{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+span{
+    color: #F39E50;
+}
+.img_card img{
+    width: 440px;
+    max-height: 350px;
+    object-fit: cover;
+}
+.wrapper_cards_btn{
+    display: flex;
+    margin-top: 30px;
+    gap: 60px;
+}
+.tovar-img{
+    height: 200px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.btns_wrapper{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: start;
+}
+.btns_wrapper p{
+    font-weight: 600;
+}
+.price_in_card{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* стр товара */
+
+.logo{
+    font-size: 32px;
+    color: #870404;
+}
+
+.catalog__image{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.catalog-item-img{
+    height: 250px;
+}
+
+/* html,body{ 
+    height: 100%; 
+} 
+.wrapper{ 
+    min-height: 100%; 
+    display: flex; 
+    flex-direction: column 
+} 
+.main { 
+    flex: 1 1 auto; 
+} */
